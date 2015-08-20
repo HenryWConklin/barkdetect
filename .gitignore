@@ -1,0 +1,4 @@
+private.conf
+*.wav
+classification.txt
+errlog.txt

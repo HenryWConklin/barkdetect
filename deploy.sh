@@ -2,8 +2,6 @@
 
 cd /home/pi/barkdetect/
 
-eval `ssh-agent -s`
-
 # Pull the code from the git repository
 git pull
 

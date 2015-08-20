@@ -1,1 +1,3 @@
-/home/pi/barkdetect/post.py
+cd /home/pi/barkdetect/
+./post.py
+cd /

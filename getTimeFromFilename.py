@@ -15,7 +15,7 @@ if __name__ == "__main__":
     minute = int(s[15:17])
 
     # Offset to compensate for the filter job scheduling
-    minute += 11
+    minute += 13
     if minute >= 60:
         hour += 1
         hour %= 24

@@ -9,3 +9,5 @@
 # Re-deploy daily
 0 6 * * * /home/pi/barkdetect/deploy.sh
 
+# Add a timestamp to the error log daily
+0 7 * * * date >> /home/pi/barkdetect/errlog.txt

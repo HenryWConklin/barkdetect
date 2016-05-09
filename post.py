@@ -15,18 +15,28 @@ def genPost():
     punc = ['!', '.']
     numWords = random.randint(1, 10)
     s = ''
+    hashTag = False
     sentenceBegin = True
     for x in range(numWords):
         if sentenceBegin:
+            if random.random() > .66:
+                hashTag = True
+                s += '#'
             s += random.choice(upperWords)
             sentenceBegin = False
         else:
-            s += random.choice(words)
+            if hashTag:
+                s += random.choice(upperWords)
+            else:
+                s += random.choice(words)
         
         if random.random() > .5 or x == numWords-1:
             sentenceBegin = True
-            s += random.choice(punc)
-        s += ' '
+            if not hashTag: 
+                s += random.choice(punc)
+            hashTag = False
+        if not hashTag:
+            s += ' '
 
     return s
 

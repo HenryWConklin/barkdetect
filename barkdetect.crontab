@@ -1,7 +1,7 @@
 @reboot /home/pi/barkdetect/startup.sh
 
 # Process recordings every 10 minutes
-0-59/10 * * * * bash /home/pi/barkdetect/process.sh 2>> /home/pi/barkdetect/errlog.tx
+0-59/10 * * * * bash /home/pi/barkdetect/process.sh 2>> /home/pi/barkdetect/errlog.txt
 
 # Clear junk folder daily
 0 6 * * * rm /home/pi/barkdetect/samples/junk/*

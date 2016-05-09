@@ -25,4 +25,4 @@ Copy the contents of barkdetect.crontab to your crontab file (`crontab -e`).
 
 NOTE: You may want to remove the line that triggers deploy.sh if you want to make changes. Otherwise, it will pull new commits automatically.
 
-
+Reboot and all the appropriate scripts should begin running in the background. Make sure you microphone is plugged in at startup or the recording script will crash. If it does crash, run startup.py and it should start again.

@@ -17,10 +17,7 @@ and
 
 to the absolute paths of this repository and pyAudioAnalsysis/audioAnalysis.py respectively.
 
-Also change the paths in atjob.txt, barkdetect.crontab, deploy.sh, and startup.sh. If your username happens to be pi and you clone to your home directory, these paths will already be correct.
+Also change the paths in atjob.txt, barkdetect.crontab, and startup.sh. If your username happens to be pi and you clone to your home directory, these paths will already be correct.
 
 Copy the contents of barkdetect.crontab to your crontab file (`crontab -e`).
-
-NOTE: You may want to remove the line that triggers deploy.sh if you want to make changes. Otherwise, it will pull new commits automatically.
-
 

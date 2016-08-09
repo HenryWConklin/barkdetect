@@ -19,7 +19,7 @@ If you do not clone into your home directory, or don't use the default user (pi)
 
 If you follow the instructions here, you do not need to follow the above instruction.
 
-Move into the new barkdetect directory and Run the install script
+Move into the new barkdetect directory and run the install script
 
 `cd barkdetect`
 

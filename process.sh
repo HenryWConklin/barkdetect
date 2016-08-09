@@ -6,7 +6,7 @@
 homedir=/home/pi/barkdetect/
 
 # Classify sounds, writes class to ${homedir}classification.txt
-python /home/pi/libs/python/pyAudioAnalysis/audioAnalysis.py classifyFolder -i ${homedir}samples --model knn --classifier ${homedir}knnBarkDetect --details > ${homedir}classification.txt
+python $homedir/pyAudioAnalysis/audioAnalysis.py classifyFolder -i ${homedir}samples --model knn --classifier ${homedir}knnBarkDetect --details > ${homedir}classification.txt
 
 #Check to see if classification ran correctly
 if [[ $? == 0 ]]; then

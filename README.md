@@ -4,23 +4,29 @@ See http://henrywconklin.github.io/projects/2015/08/17/oliver-twitter.html for d
 **Requirements**
 
 * [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis)
-* [python-twitter](https://github.com/bear/python-twitter) (`sudo pip install twitter` works)
-* at (`sudo apt-get install at`)
+* [python-twitter](https://github.com/bear/python-twitter) 
+* at 
 
 **Installation**
 
-Clone pyAudioAnalysis and this repository. Change the paths in the lines in process.sh:
+Clone this repository into your home directory
 
-`homedir=/home/pi/barkdetect/`
+`cd ~`
 
-and
+`git clone https://github.com/HenryWConklin/barkdetect`
 
-`python /home/pi/libs/python/pyAudioAnalysis/audioAnalysis.py classifyFolder...`
+If you do not clone into your home directory, or don't use the default user (pi) you will need to change some paths. Do a `grep "/home/pi/barkdetect" *` and change the matches to point to the barkdetect folder.
 
-to the absolute paths of this repository and pyAudioAnalsysis/audioAnalysis.py respectively.
+If you follow the instructions here, you do not need to follow the above instruction.
 
-Also change the paths in atjob.txt, barkdetect.crontab, and startup.sh. If your username happens to be pi and you clone to your home directory, these paths will already be correct.
+Move into the new barkdetect directory and Run the install script
 
-Copy the contents of barkdetect.crontab to your crontab file (`crontab -e`).
+`cd barkdetect`
 
-Reboot and all the appropriate scripts should begin running in the background. Make sure you microphone is plugged in at startup or the recording script will crash. If it does crash, run startup.py and it should start again.
+`sudo ./install.sh`
+
+This will download and install all the requirements and set up the cron jobs.
+
+Reboot, and all the appropriate scripts should begin running in the background. Make sure your microphone is plugged in at startup or the recording script will crash. If it does crash, either restart the system, or restart the script with `./startup.py`.
+
+

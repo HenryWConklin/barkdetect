@@ -23,7 +23,7 @@ Move into the new barkdetect directory and run the install script
 
 `cd barkdetect`
 
-`sudo ./install.sh`
+`./install.sh`
 
 This will download and install all the requirements and set up the cron jobs.
 

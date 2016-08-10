@@ -1,11 +1,8 @@
-if [ "`whoami`" !=  "root" ]; then
-    echo "Error: Must be run as root"
-    exit 1
-fi
 
 #Prereqs
-apt-get install at
-pip install twitter
+sudo apt-get update
+sudo apt-get install at
+sudo pip install twitter
 
 git clone https://github.com/tyiannak/pyAudioAnalysis
 
